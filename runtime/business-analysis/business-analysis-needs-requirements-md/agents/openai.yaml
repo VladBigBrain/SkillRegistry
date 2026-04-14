@@ -1,4 +1,0 @@
-interface:
-  display_name: "Business Analysis Needs & Requirements MD"
-  short_description: "Draft need, requirements, and business index in Markdown"
-  default_prompt: "Use $business-analysis-needs-requirements-md to draft business need, requirements, and index Markdown files."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Draw.io"
+  short_description: "Create draw.io files and exports"
+  default_prompt: "Use $drawio to create or update a draw.io diagram, export it when requested, and visually validate the final layout so nodes and labels do not overlap."

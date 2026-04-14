@@ -10,6 +10,8 @@
 - `schemas/` — контейнеры под будущие schema-артефакты по объектам.
 - `evals/` — контейнеры под будущие evals по объектам.
 - `runtime/` — runtime-манифесты, сгруппированные по объектам.
+- `myskills/` — изолированный namespace для пользовательских skills и subagents.
+- `vendors/` — изолированный vendor namespace для внешних skills и subagents.
 
 ## Skills
 
@@ -100,7 +102,49 @@
 - `schemas/` — `2` placeholder files.
 - `evals/` — `2` placeholder files.
 
+## MySkills
+
+- `myskills/skills/brainstorming`
+- `myskills/skills/business-discovery`
+- `myskills/subagents/analyst`
+- `myskills/subagents/business-discovery`
+- `myskills/subagents/business-needs-requirements-md`
+- `myskills/subagents/doc`
+- `myskills/subagents/drawio`
+- `myskills/subagents/figma`
+- `myskills/subagents/figma-implement-design`
+- `myskills/subagents/imagegen`
+- `myskills/subagents/linear`
+- `myskills/subagents/openai-docs`
+- `myskills/subagents/pdf`
+- `myskills/subagents/playwright`
+- `myskills/subagents/reviewer`
+- `myskills/subagents/screenshot`
+- `myskills/subagents/spreadsheet`
+- `myskills/subagents/stakeholders-from-business-requirements-md`
+- `myskills/subagents/task-runner`
+- `myskills/subagents/use-case`
+- `myskills/subagents/user-story`
+
+- `myskills/skills` — `2` пользовательских skill directories, `2` files `SKILL.md`.
+- `myskills/subagents` — `19` пользовательских subagent directories, `19` files `agents/openai.yaml`.
+
+## Vendors
+
+- `vendors/skills/system` — `5` vendor skill directories.
+- `vendors/skills/superpowers` — `14` vendor skill directories.
+- `vendors/skills/plugins-cache` — `59` vendor skill directories.
+- `vendors/skills/tmp-plugins` — `237` vendor skill directories.
+- `vendors/skills/vendor-imports` — `43` vendor skill directories.
+- `vendors/subagents/system` — `5` vendor subagent manifests.
+- `vendors/subagents/superpowers` — `0` nested `agents/openai.yaml` manifests, только именованные agent-ресурсы.
+- `vendors/subagents/plugins-cache` — `15` vendor subagent manifests.
+- `vendors/subagents/tmp-plugins` — `118` vendor subagent manifests.
+- `vendors/subagents/vendor-imports` — `43` vendor subagent manifests.
+- `vendors/` — `358` vendor skills и `181` vendor subagent resources суммарно.
+
 ## Notes
 
-- Полностью удалены `plugins-cache`, `vendor-imports`, `superpowers`, `.system` и несогласованные generic skills.
+- Пользовательские `home` и `.codex` skill-артефакты убраны из внешнего каталога `agents` и перенесены в изолированный `myskills/`.
+- `plugins-cache`, `vendor-imports`, `superpowers` и `.system` убраны из доменного ядра реестра и перенесены в изолированный `vendors/`.
 - Пустые объектные контейнеры сохранены через `.gitkeep`, чтобы структура по доменам жила в git даже до появления реальных workflow/schema/eval артефактов.

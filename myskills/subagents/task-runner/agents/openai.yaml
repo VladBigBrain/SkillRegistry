@@ -1,0 +1,7 @@
+interface:
+  display_name: "Task Runner"
+  short_description: "Полный цикл + HTML-отчет"
+  default_prompt: "Use $task-runner to solve this task end-to-end, finish only at 5/5 or a real blocker, and produce a polished HTML report of the work."
+
+policy:
+  allow_implicit_invocation: false

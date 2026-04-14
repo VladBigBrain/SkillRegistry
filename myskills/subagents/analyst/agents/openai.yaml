@@ -1,0 +1,7 @@
+interface:
+  display_name: "Analyst"
+  short_description: "Совместный discovery и анализ решений"
+  default_prompt: "Use $analyst to run a collaborative discovery session, compare solution directions, and produce a high-level analytical brief."
+
+policy:
+  allow_implicit_invocation: false

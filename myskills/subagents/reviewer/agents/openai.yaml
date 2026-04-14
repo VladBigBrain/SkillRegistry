@@ -1,0 +1,7 @@
+interface:
+  display_name: "Reviewer"
+  short_description: "Ревью реализации против артефакта и плана"
+  default_prompt: "Use $reviewer to assess whether the implementation matches the analytical artifact and approved plan, identify findings, and propose fixes."
+
+policy:
+  allow_implicit_invocation: false
