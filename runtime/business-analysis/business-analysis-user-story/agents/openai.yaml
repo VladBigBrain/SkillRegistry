@@ -1,0 +1,7 @@
+interface:
+  display_name: "Business Analysis User Story"
+  short_description: "Шаблон US + AC (GWT) + тест-сценарии"
+  default_prompt: "Use $business-analysis-user-story to draft a User Story with acceptance criteria (Given/When/Then) and test scenarios."
+
+policy:
+  allow_implicit_invocation: true

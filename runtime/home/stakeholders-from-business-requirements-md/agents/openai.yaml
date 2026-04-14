@@ -1,4 +1,0 @@
-interface:
-  display_name: "Stakeholders from BR MD"
-  short_description: "Derive stakeholder tables from business requirements in Markdown"
-  default_prompt: "Use $stakeholders-from-business-requirements-md to draft a stakeholder table from business requirements."

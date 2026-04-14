@@ -1,7 +1,0 @@
-interface:
-  display_name: "User Story"
-  short_description: "Шаблон US + AC (GWT) + тест-сценарии"
-  default_prompt: "Use $user-story to draft a User Story with acceptance criteria (Given/When/Then) and test scenarios."
-
-policy:
-  allow_implicit_invocation: true
