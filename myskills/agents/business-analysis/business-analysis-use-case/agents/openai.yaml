@@ -1,6 +1,6 @@
 interface:
   display_name: "Business Analysis Use Case"
-  short_description: "Шаблон UC + BA↔DDD (команда, агрегат, события)"
+  short_description: "UC template + BA↔DDD mapping (command, aggregate, events)"
   default_prompt: "Use $business-analysis-use-case to draft a Use Case (UC) with main/alternate flows and a BA↔DDD mapping."
 
 policy:

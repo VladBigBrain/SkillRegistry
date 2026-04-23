@@ -1,6 +1,6 @@
 # MySkills
 
-Здесь лежит изолированный namespace пользовательских skills и связанных subagents.
+This directory contains an isolated namespace for custom skills and related subagents.
 
 ## Skills
 
@@ -29,4 +29,4 @@
 - `myskills/subagents/use-case`
 - `myskills/subagents/user-story`
 
-Это пространство хранится отдельно от доменных `skills/`, `agents/`, `runtime/` и от `vendors/`, чтобы пользовательские артефакты не смешивались ни с ядром реестра, ни с внешними импортами.
+This namespace is kept separate from domain `skills/`, `agents/`, `runtime/`, and `vendors/` so custom artifacts do not mix with either the registry core or external imports.

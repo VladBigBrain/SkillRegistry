@@ -10,6 +10,7 @@
 - `schemas/` — контейнеры под будущие schema-артефакты по объектам.
 - `evals/` — контейнеры под будущие evals по объектам.
 - `runtime/` — runtime-манифесты, сгруппированные по объектам.
+- `temp/` — персональный snapshot глобальных skills, вынесенный из `~/.codex/skills`.
 - `myskills/` — изолированный namespace для пользовательских skills и subagents.
 - `vendors/` — изолированный vendor namespace для внешних skills и subagents.
 
@@ -129,6 +130,13 @@
 - `myskills/skills` — `2` пользовательских skill directories, `2` files `SKILL.md`.
 - `myskills/subagents` — `19` пользовательских subagent directories, `19` files `agents/openai.yaml`.
 
+## Temp
+
+- `temp/skills` — `35` skill directories containing `SKILL.md`, это снимок прежнего глобального каталога `~/.codex/skills`.
+- `temp/skills/.system` — системные personal skills, перенесённые из глобального каталога.
+- `temp/skills/codex-primary-runtime` — runtime-oriented skills, перенесённые из глобального каталога.
+- `temp/skills/skill-registry-catalog-installer` — личный каталогизатор, перенастроенный на `temp/skills` и plugin mirrors.
+
 ## Vendors
 
 - `vendors/skills/system` — `5` vendor skill directories.
@@ -145,6 +153,7 @@
 
 ## Notes
 
+- Глобальный personal-каталог `~/.codex/skills` теперь может быть пустым; его рабочий snapshot сохранён в `temp/skills/`.
 - Пользовательские `home` и `.codex` skill-артефакты убраны из внешнего каталога `agents` и перенесены в изолированный `myskills/`.
 - `plugins-cache`, `vendor-imports`, `superpowers` и `.system` убраны из доменного ядра реестра и перенесены в изолированный `vendors/`.
 - Пустые объектные контейнеры сохранены через `.gitkeep`, чтобы структура по доменам жила в git даже до появления реальных workflow/schema/eval артефактов.

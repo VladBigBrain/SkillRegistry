@@ -187,8 +187,8 @@ When the user confirms readiness, invoke:
 
 Use it to formalize:
 
-- `business/бизнес-потребность.md`
-- `business/бизнес-требования.md`
+- `business/business-need.md`
+- `business/business-requirements.md`
 - `business/index.md`
 - `stakeholders/index.md`
 
